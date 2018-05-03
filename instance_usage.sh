@@ -13,4 +13,4 @@ for x in $parameters:
 end
 set url (string join "?" $main_url $params)
 set data (curl -H 'Accept: application/json' $url)
-python3 ./cloudhealthQuery.py $data
+python3 ./usage_calc.py $data
